@@ -1,0 +1,43 @@
+/* for xs */
+@media (max-width: 575px) {
+	.works-gallery{
+		text-align: center;
+	}
+	.checkbox_container{
+		flex-direction: column;
+	}
+	.btn_contact{
+		display: inline-block;
+		width: 100%;
+	}
+	.footer_main{
+		display: block;
+		text-align: center;
+	}
+	.copy{
+		display: block;
+	}
+	.socials{
+		float: none;
+		margin-bottom: 15px;
+	}
+}
+
+/* for md */
+@media (min-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+/* for lg */
+@media (min-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+}
+/* for xl */
+@media (min-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+}
