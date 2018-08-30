@@ -1,0 +1,60 @@
+/* basic settings */
+*, *::before,*::after{ box-sizing: border-box;}
+body{ font-family: sans-serif;}
+
+/* FrameEffect */
+	@frame-bd-size: 2px solid;
+	@frame-indents: 5%;
+	.frame-transition{ transition: all .2s;}
+
+.frame-item{
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 300px;
+	height: 300px;
+	background-color: #f06292;
+	color: #fff;
+	&__header{
+		transform: translateY(20px);
+		.frame-transition;
+	}
+	&__text{
+		transform: translateY(-20px);
+		opacity: 0;
+		visibility: hidden;
+		.frame-transition;
+	}
+	&::before,
+	&::after{
+		content: '';
+		position: absolute;
+		top: @frame-indents;
+		bottom: @frame-indents;
+		left: @frame-indents;
+		right: @frame-indents;
+		.frame-transition;
+	}
+	&::before{
+		border-top: @frame-bd-size;
+		border-bottom: @frame-bd-size;
+		transform: scaleX(0);
+	}
+	&::after{
+		border-left: @frame-bd-size;
+		border-right: @frame-bd-size;
+		transform: scaleY(0);
+	}
+	&:hover::before,
+	&:hover::after{
+		transform: scale(1);
+	}
+	&:hover &__header,
+	&:hover &__text{
+		transform: translateY(0);
+		opacity: 1;
+		visibility: visible;
+	}
+}
