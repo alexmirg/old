@@ -1,0 +1,315 @@
+/* Fonts settings */
+@font-face {
+	font-family: 'ProximaNova_reg';
+	src: url('../fonts/ProximaNova-Regular.eot');
+	src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
+		url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Regular.woff') format('woff'),
+		url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNova_bold';
+	src: url('../fonts/ProximaNova-Bold.eot');
+	src: local('Proxima Nova Bold'), local('ProximaNova-Bold'),
+		url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Bold.woff') format('woff'),
+		url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+.reg() {
+	font-family: 'ProximaNova_reg', sans-serif;
+}
+.bold() {
+	font-family: 'ProximaNova_bold', sans-serif;
+}
+
+/* Colors */
+@btn-color: #fcb303;
+@icons-color: #46b814;
+@text: #1a1820;
+@danger: #ff0000;
+@bg-light: #f5f5f5;
+@light: #fff;
+@border-input: #ddd;
+
+/* Basic settings */
+html {
+	font-size: 10px;
+}
+body{
+	.reg();
+}
+a:hover{
+	text-decoration: none;
+}
+button, input, textarea, a{
+	&:focus{
+		outline: none;
+	}
+}
+.button{
+	padding: 1rem 3rem;
+	border-radius: 8px;
+	font-size: 1.2rem;
+	background-color: @btn-color;
+	color: @light;
+	text-transform: uppercase;
+	border: none;
+	&:hover{
+		cursor: pointer;
+		background-color: darken(@btn-color, 5%);
+	}
+}
+section {
+	padding: 10rem 0;
+}
+.section-header{
+	margin: 2rem 0 10rem;
+	.bold;
+	font-size: 3.6rem;
+	text-align: center;
+}
+
+/* Main */
+.main{
+	padding: 3rem 0 5rem;
+	background: #fff url('http://placehold.it/1920x700') center center no-repeat;
+	background-size: cover;
+	&-content{
+		margin-top: 10rem;
+		/* Заголовок */
+		h1{
+			margin-bottom: 4rem;
+			line-height: 1.45;
+			.bold();
+			font-size: 4rem;
+			text-transform: uppercase;
+		}
+	}
+	/* Подзаголовок */
+	&-subtitle{
+		margin-bottom: 4rem;
+		font-size: 2.4rem;
+	}
+	/* Зеленый ярлык */
+	span{
+		display: inline-block;
+		padding: 3rem 5rem;
+		background-color: @icons-color;
+		font-size: 1.8rem;
+		color: @light;
+		text-align: center;
+		/* Цифра "300" рублей */
+		strong{
+			font-size: 3rem;
+			.bold();
+		}
+	}
+	/* Оплата по факту */
+	&-trigger{
+		display: block;
+		margin-top: 3rem;
+		font-size: 2.2rem;
+		text-transform: uppercase;
+		.bold();
+	}
+	/* Главная форма */
+	&-form{
+		padding: 4rem 5rem;
+		background-color: @light;
+		text-align: center;
+		/* Заголовок формы */
+		&-header{
+			margin-bottom: 4rem;
+			font-size: 1.8rem;
+			strong{
+				font-size: 1.9rem;
+			}
+		}
+		/* Поле для ввода */
+		&-input{
+			display: block;
+			width: 100%;
+			border: 1px solid @border-input;
+			border-radius: 5px;
+			padding: 1.5rem;
+			margin: 2rem 0;
+		}
+		label{
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			display: inline-block;
+			padding: 0.5rem;
+			background-color: @light;
+			font-size: 1.3rem;
+		}
+		/* Кнопка отправить заявку */
+		&-btn{
+			display: block;
+			height: 5.5rem;
+			width: 100%;
+			font-size: 1.6rem;
+		}
+		/* Подпись под кнопкой */
+		&-small {
+			display: block;
+			margin-top: 1.5rem;
+			font-size: 1.3rem;
+		}
+	}
+}
+.header-btn-cover{
+	text-align: right !important;
+}
+.header-btn{
+	text-align: right;
+}
+.phone-link-cover{
+	text-align: right;
+}
+.phone-link{
+	display: inline-block;
+	.bold();
+	font-size: 2rem;
+	color: @text;
+}
+
+/* оформление секции с преимуществами */
+.features{
+	&-block{
+		text-align: center;
+		h3{
+			.bold;
+			font-size: 2rem;
+			margin-bottom: 3rem;
+		}
+		p{
+			display: inline-block;
+			width: 80%;
+			font-size: 1.4rem;
+		}
+	}
+	&-img{
+		height: 8rem;
+		margin-bottom: 3rem;
+		img{
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	.slick-active{
+		outline: none;
+	}
+	.arrow{
+		transform: translateY(-50%);
+		top: 50%;
+		position: absolute;
+		z-index: 99;
+		width: 2rem;
+		height: 2rem;
+		border: none;
+		background-size: 70%;
+
+
+	}
+	.prev{
+		background: #000 url(../img/left-arrow.svg) center no-repeat;
+		left: 0;
+	}
+	.next{
+		background: #000 url(../img/right-arrow.svg) center no-repeat;
+		right: 0;
+	}
+}
+
+/* Оформление модальных окон */
+.popup{
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+	background-color: rgba(0, 0, 0, .5);
+	&-content{
+		position: fixed;
+		left: 50%;
+		top: 10%;
+		background-color: @light;
+		transform: translateX(-50%);
+		padding: 4rem 6rem;
+		text-align: center;
+	}
+	&-form{
+		margin-top: 3rem;
+		padding: 0;
+	}
+	&-close{
+		position: absolute;
+		top: -1.5rem;
+		right: -2rem;
+		width: 2rem;
+		text-align: center;
+		border: none;
+		background-color: transparent;
+		font-size: 3rem;
+		color: @light;
+		cursor: pointer;
+	}
+	&-header{
+		.bold();
+	}
+}
+
+/* Media */
+@media (max-width: 991px){
+	.main{
+		background-position: top right;
+	}
+	.phone-link-cover{
+		text-align: center;
+	}
+	.main-title{
+		padding-bottom: 3rem;
+		text-align: center;
+	}
+	.main-content{
+		margin-top: 3rem;
+	}
+}
+@media (max-width: 776px){
+	.main{
+		background-position: top left;
+	}
+	.logo{
+		text-align: center;
+	}
+	.phone-link-cover{
+		text-align: center;
+	}
+	.header-btn-cover{
+		margin-top: 10px;
+		text-align: center !important;
+	}
+}
+@media (max-width: 576px){
+	html{
+		font-size: 8px;
+	}
+	.main-title{
+		h1{
+			font-size: 3rem;
+		}
+	}
+}
+
+
+// http://placehold.it/1920x700 main_bg
