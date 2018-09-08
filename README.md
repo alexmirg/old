@@ -2,20 +2,20 @@
 ## Study projects
 1. [WebFlex](https://alexmirg.github.io/WebFlex/)
     * Font Awesome;
-    * Responsive;
     * Bootstrap;
     * Normalize;
+    * **Responsive**;
 
 2. [tinyone](https://alexmirg.github.io/tinyone/)
     * Bootstrap;
     * animate.css;
-    * Responsive;
+    * **Responsive**;
 
 3. [StroyInvest](https://alexmirg.github.io/investStroy/)
     * Bootstrap GRID;
     * Font Awesome;
     * animate.css;
-    * Sass;
+    * **Sass**;
     * Slick slider;
     * No Adaptive;
                 
@@ -35,5 +35,5 @@
 3. [Strict](https://alexmirg.github.io/StrictAdaptive/) 
     * Font Awesome;
     * Bootstrap GRID;
-    * Full responsive;
+    * **Full responsive**;
     
