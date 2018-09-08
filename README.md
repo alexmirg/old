@@ -1,6 +1,25 @@
 # Alex Mirg
-## My page-proofs
+## Study projects
+1. [WebFlex](https://alexmirg.github.io/WebFlex/)
+    * Font Awesome;
+    * Responsive;
+    * Bootstrap;
+    * Normalize;
 
+2. [tinyone](https://alexmirg.github.io/tinyone/)
+    * Bootstrap;
+    * animate.css;
+    * Responsive;
+
+3. [StroyInvest](https://alexmirg.github.io/investStroy/)
+    * Bootstrap GRID;
+    * Font Awesome;
+    * animate.css;
+    * Sass;
+    * Slick slider;
+    * No Adaptive;
+                
+## My works
 1. [Agnecy](https://alexmirg.github.io/Agnecy/)
     * Font Awesome;
     * No Adaptive
