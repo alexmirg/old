@@ -1,5 +1,5 @@
 # Alex Mirg
-My page-proofs
+## My page-proofs
 
 1. [Agnecy](https://alexmirg.github.io/Agnecy/)
     * Font Awesome;
