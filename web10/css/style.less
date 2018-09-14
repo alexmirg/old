@@ -82,6 +82,35 @@ section {
 	margin: 2rem 0 10rem;
 	text-align: center;
 }
+/* Оформление форм */
+.form{
+			/* Поле для ввода */
+	&-input{
+		display: block;
+		width: 100%;
+		border: 1px solid @border-input;
+		border-radius: 5px;
+		padding: 1.5rem;
+		margin: 2rem 0;
+	}
+	label{
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		display: inline-block;
+		padding: 0.5rem;
+		.reg();
+		background-color: @light;
+		font-size: 1.3rem;
+	}
+		/* Кнопка отправить заявку */
+	&-btn{
+		display: block;
+		height: 5.5rem;
+		width: 100%;
+		font-size: 1.6rem;
+	}
+}
 
 /* Main */
 .main{
@@ -138,31 +167,6 @@ section {
 			strong{
 				font-size: 1.9rem;
 			}
-		}
-		/* Поле для ввода */
-		&-input{
-			display: block;
-			width: 100%;
-			border: 1px solid @border-input;
-			border-radius: 5px;
-			padding: 1.5rem;
-			margin: 2rem 0;
-		}
-		label{
-			position: absolute;
-			left: 50%;
-			transform: translateX(-50%) translateY(-50%);
-			display: inline-block;
-			padding: 0.5rem;
-			background-color: @light;
-			font-size: 1.3rem;
-		}
-		/* Кнопка отправить заявку */
-		&-btn{
-			display: block;
-			height: 5.5rem;
-			width: 100%;
-			font-size: 1.6rem;
 		}
 		/* Подпись под кнопкой */
 		&-small {
