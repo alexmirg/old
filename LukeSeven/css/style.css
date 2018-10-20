@@ -1,7 +1,15 @@
+/*------------------------------------------------------------------
+  	[Basic settings]
+------------------------------------------------------------------*/
+
 body {
   margin: 0;
   color: #0b0b0b;
   font-family: 'Hind', sans-serif;
+}
+
+.content {
+  width: 100%;
 }
 
 h2 {
@@ -16,11 +24,9 @@ a {
   text-decoration: none;
 }
 
-p {
-  width: 80%;
-  margin: 0 auto;
-}
-
+/*------------------------------------------------------------------
+  	[Header]
+------------------------------------------------------------------*/
 .header {
   display: flex;
   justify-content: space-between;
@@ -36,6 +42,24 @@ p {
   z-index: 1;
 }
 
+/* header logo*/
+.logo {
+  display: inline-block;
+  color: #0b0b0b;
+  font-size: 28px;
+  line-height: 60px;
+}
+
+.invert {
+  color: rgba(255, 94, 0, .8);
+  transition: .8s ease-in-out;
+}
+
+.logo:hover .invert {
+  color: #0b0b0b;
+}
+
+/* Navbar */
 .navbar {
   display: flex;
   height: 100%;
@@ -57,27 +81,10 @@ p {
 .active {
   color: rgb(255, 94, 0);
 }
-.logo {
-  display: inline-block;
-  color: #0b0b0b;
-  font-size: 28px;
-  line-height: 60px;
-}
 
-.invert {
-  color: rgba(255, 94, 0, .8);
-  transition: .8s ease-in-out;
-}
-
-.logo:hover .invert {
-  color: #0b0b0b;
-}
-
-.content {
-  width: 100%;
-}
-
-/* gallery */
+/*------------------------------------------------------------------
+  	[Gallery]
+------------------------------------------------------------------*/
 
 .gallery {
   width: 80%;
