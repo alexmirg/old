@@ -132,3 +132,47 @@ a {
   opacity: 0;
   transition: .2s;
 }
+
+/*------------------------------------------------------------------
+  	[MEDIA]
+------------------------------------------------------------------*/
+
+@media screen and (max-width: 768px)
+{
+  .navbar{
+    display: none;
+  }
+  .gallery
+  {
+    width: 90%;
+  }
+  .gallery-sizer,
+  .gallery-item {
+    width: calc(33.3% - 6.8px);
+  }
+}
+
+
+@media screen and (max-width: 576px)
+{
+  .gallery
+  {
+    width: calc(100% - 20px);
+  }
+  .gallery-sizer,
+  .gallery-item {
+    width: calc(50% - 5px);
+  }
+}
+
+@media screen and (max-width: 450px)
+{
+  .gallery
+  {
+    width: calc(100% - 20px);
+  }
+  .gallery-sizer,
+  .gallery-item {
+    width: calc(100%);
+  }
+}
